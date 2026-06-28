@@ -639,13 +639,12 @@ describe("AI Providers Unicode Surrogate Pair Tests", () => {
 				await testRealWorldLinkedInData(llm);
 			});
 
-			it(
-				"should handle unpaired high surrogate (0xD83D) in tool results",
-				{ retry: 3, timeout: 30000 },
-				async () => {
-					await testUnpairedHighSurrogate(llm);
-				},
-			);
+			it("should handle unpaired high surrogate (0xD83D) in tool results", {
+				retry: 3,
+				timeout: 30000,
+			}, async () => {
+				await testUnpairedHighSurrogate(llm);
+			});
 		},
 	);
 
@@ -662,13 +661,12 @@ describe("AI Providers Unicode Surrogate Pair Tests", () => {
 				await testRealWorldLinkedInData(llm);
 			});
 
-			it(
-				"should handle unpaired high surrogate (0xD83D) in tool results",
-				{ retry: 3, timeout: 30000 },
-				async () => {
-					await testUnpairedHighSurrogate(llm);
-				},
-			);
+			it("should handle unpaired high surrogate (0xD83D) in tool results", {
+				retry: 3,
+				timeout: 30000,
+			}, async () => {
+				await testUnpairedHighSurrogate(llm);
+			});
 		},
 	);
 
@@ -685,13 +683,12 @@ describe("AI Providers Unicode Surrogate Pair Tests", () => {
 				await testRealWorldLinkedInData(llm);
 			});
 
-			it(
-				"should handle unpaired high surrogate (0xD83D) in tool results",
-				{ retry: 3, timeout: 30000 },
-				async () => {
-					await testUnpairedHighSurrogate(llm);
-				},
-			);
+			it("should handle unpaired high surrogate (0xD83D) in tool results", {
+				retry: 3,
+				timeout: 30000,
+			}, async () => {
+				await testUnpairedHighSurrogate(llm);
+			});
 		},
 	);
 

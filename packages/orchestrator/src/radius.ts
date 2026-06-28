@@ -121,7 +121,7 @@ const radiusAuthStorage = AuthStorage.create();
 function getStoredRadiusCredential(): OAuthCredential | undefined {
 	radiusAuthStorage.reload();
 	const credential = radiusAuthStorage.get(RADIUS_PROVIDER);
-	if (!credential || credential.type !== "oauth") {
+	if (credential?.type !== "oauth") {
 		return undefined;
 	}
 	return credential;
